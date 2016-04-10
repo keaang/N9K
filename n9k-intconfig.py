@@ -18,7 +18,7 @@ def configInterface(cmd):
 	  }
 	}
 	response = requests.post(url,data=json.dumps(payload), headers=myheaders,auth=(switchuser,switchpassword)).json()
-	print (response)
+	print (json.dumps(response,indent=4))
 
 
 for count in range(0,3):

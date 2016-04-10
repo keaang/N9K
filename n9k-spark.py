@@ -40,7 +40,7 @@ def showCommand(mycmd):
 	}
 	response = requests.post(url,data=json.dumps(payload), headers=myheaders,auth=(switchuser,switchpassword)).json()
 
-	print (response)
+	print (json.dumps(response,indent=4))
 	return response
 ## end def showCommand(mycmd): function
 
